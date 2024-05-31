@@ -14,6 +14,7 @@ public static class Configurations
         return Host.CreateDefaultBuilder()
             .ConfigureServices(service =>
             {
+                //Change the path of Database!
                 service.AddSqlite<Contexts>(@"Data Source=/Users/oliver/RiderProjects/Project/Models/db/database.db;");
                 service.AddScoped<IVehicleRepository<Motorbike>, MotorbikeRepository>();
                 service.AddScoped<IVehicleRepository<Car>, CarRepository>();

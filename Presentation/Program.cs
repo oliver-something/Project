@@ -1,6 +1,10 @@
 ﻿namespace Presentation;
 using Microsoft.Extensions.DependencyInjection;
-
+/*
+ *     Change the path of Database!
+ *     This Project uses SQLite and entity framework core
+ * 
+ */
 public static class Program
 {
     public static void Main(string[] args)

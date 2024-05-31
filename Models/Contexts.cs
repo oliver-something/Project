@@ -16,6 +16,7 @@ public class DbContextFactory : IDesignTimeDbContextFactory<Contexts>
     public Contexts CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<Contexts>();
+        //Change the path of Database!
         const string dir = @"Data Source=/Users/oliver/RiderProjects/Project/Models/db/database.db;";
         optionsBuilder.UseSqlite(dir);
         return new Contexts(optionsBuilder.Options);
